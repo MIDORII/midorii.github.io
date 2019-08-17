@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[网易严选面试前的小准备]]></title>
+    <url>%2F2019%2F08%2F17%2F%E7%BD%91%E6%98%93%E4%B8%A5%E9%80%89%E9%9D%A2%E8%AF%95%E5%89%8D%E7%9A%84%E5%B0%8F%E5%87%86%E5%A4%87%2F</url>
+    <content type="text"><![CDATA[1.string不可变，string buffer和string builder可变；string builder非线性安全，其余两个线性安全。2.输入域名到看到页面过程：域名解析成IP，TCP三次握手，发送HTTP请求，处理请求返回HTTP报文，四次挥手。3.JAVA内存模型：JAVA虚拟机=线程栈+堆，]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2019%2F08%2F17%2FHello-World%2F</url>
     <content type="text"><![CDATA[hello world!]]></content>

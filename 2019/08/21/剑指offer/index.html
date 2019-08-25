@@ -57,18 +57,18 @@
   };
 </script>
 
-  <meta name="description" content="也不是我写的啦，看到的记录下最优解法。3.数组中重复数字：    将值为i的元素调整到第i个位置求解。4.二维数组查找：    从右上角开始，小于它的数在其左边，大于它的数在其右边。5.空格替换：    两个指针从最右边遍历，遇到空格填充替换字符。6.逆序打印链表：    递归、头插法、栈。7.根据前序遍历和中序遍历重建二叉树（不含重复数）：    前序第一个值为根，把中序分两部分。    pri">
+  <meta name="description" content="也不是我写的啦，看到的简单记录下最优解法。3.数组中重复数字：    将值为i的元素调整到第i个位置求解。4.二维数组查找：    从右上角开始，小于它的数在其左边，大于它的数在其右边。5.空格替换：    两个指针从最右边遍历，遇到空格填充替换字符。&amp;lt; !–more–&amp;gt;6.逆序打印链表：    递归、头插法、栈。7.根据前序遍历和中序遍历重建二叉树（不含重复数）：    前序第一个值">
 <meta property="og:type" content="article">
 <meta property="og:title" content="剑指offer">
 <meta property="og:url" content="http://yoursite.com/2019/08/21/剑指offer/index.html">
 <meta property="og:site_name" content="MIDORI">
-<meta property="og:description" content="也不是我写的啦，看到的记录下最优解法。3.数组中重复数字：    将值为i的元素调整到第i个位置求解。4.二维数组查找：    从右上角开始，小于它的数在其左边，大于它的数在其右边。5.空格替换：    两个指针从最右边遍历，遇到空格填充替换字符。6.逆序打印链表：    递归、头插法、栈。7.根据前序遍历和中序遍历重建二叉树（不含重复数）：    前序第一个值为根，把中序分两部分。    pri">
+<meta property="og:description" content="也不是我写的啦，看到的简单记录下最优解法。3.数组中重复数字：    将值为i的元素调整到第i个位置求解。4.二维数组查找：    从右上角开始，小于它的数在其左边，大于它的数在其右边。5.空格替换：    两个指针从最右边遍历，遇到空格填充替换字符。&amp;lt; !–more–&amp;gt;6.逆序打印链表：    递归、头插法、栈。7.根据前序遍历和中序遍历重建二叉树（不含重复数）：    前序第一个值">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="e:%5Cprogram%5Cblog%5Chexo%5Csource%5Cimages%5C2.jpg">
-<meta property="og:updated_time" content="2019-08-25T14:48:27.216Z">
+<meta property="og:updated_time" content="2019-08-25T14:55:27.557Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="剑指offer">
-<meta name="twitter:description" content="也不是我写的啦，看到的记录下最优解法。3.数组中重复数字：    将值为i的元素调整到第i个位置求解。4.二维数组查找：    从右上角开始，小于它的数在其左边，大于它的数在其右边。5.空格替换：    两个指针从最右边遍历，遇到空格填充替换字符。6.逆序打印链表：    递归、头插法、栈。7.根据前序遍历和中序遍历重建二叉树（不含重复数）：    前序第一个值为根，把中序分两部分。    pri">
+<meta name="twitter:description" content="也不是我写的啦，看到的简单记录下最优解法。3.数组中重复数字：    将值为i的元素调整到第i个位置求解。4.二维数组查找：    从右上角开始，小于它的数在其左边，大于它的数在其右边。5.空格替换：    两个指针从最右边遍历，遇到空格填充替换字符。&amp;lt; !–more–&amp;gt;6.逆序打印链表：    递归、头插法、栈。7.根据前序遍历和中序遍历重建二叉树（不含重复数）：    前序第一个值">
 <meta name="twitter:image" content="e:%5Cprogram%5Cblog%5Chexo%5Csource%5Cimages%5C2.jpg">
   <link rel="canonical" href="http://yoursite.com/2019/08/21/剑指offer/">
 
@@ -269,7 +269,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>也不是我写的啦，看到的记录下最优解法。<br>3.数组中重复数字：<br>    将值为i的元素调整到第i个位置求解。<br>4.二维数组查找：<br>    从右上角开始，小于它的数在其左边，大于它的数在其右边。<br>5.空格替换：<br>    两个指针从最右边遍历，遇到空格填充替换字符。<br>6.逆序打印链表：<br>    递归、头插法、栈。<br>7.根据前序遍历和中序遍历重建二叉树（不含重复数）：<br>    前序第一个值为根，把中序分两部分。<br>    private Map&lt;Integer, Integer&gt; indexForInOrders = new HashMap&lt;&gt;();<br>8.给定二叉树和一个节点，找其中序遍历下一个节点(节点有指向父节点指针):<br>    右子树不为空，为右子树最左节点；否则向上找第一个左链接指向的树包含该节点的祖先节点。<br>9.两个栈实现队列：<br>    一个处理push，另一个处理pop，出的时候先进pop再出。<br>10.斐波那契数列：用数组缓存一下计算过的数据。<br>    n个2<em>1矩形覆盖一个2</em>n，几种方法；跳台阶（1or2步）：找递推公式。<br>    变态跳台阶（1or2or…n步）：等比数列f(n) = 2*f(n-1)；动态规划。<br>11.输入一个非递减排序的数组的一个旋转，输出旋转数组的最小元素：<br>    用改良二分法，将数组一分为二，一个是包含最小元素的新旋转数组，另一个是非递减排序的数组（第一个元素一个小于等于最后一个元素），多次二分即可。<br>12.字符矩阵路径：<br>    回溯法（暴力搜索）。<br>13.机器人运动范围：<br>    回溯深搜。<br>14.一根升子剪多段，每段长度乘积最大：<br>    贪心，优先3、2；动态规划。<br>15.输出一个数二进制表示中1的个数：<br>    n&amp;(n-1)位运算，每做一次ans++，至0。<br>16.base（浮点数） 的 exponent（整数） 次方：<br>    <img src="E:%5Cprogram%5Cblog%5Chexo%5Csource%5Cimages%5C2.jpg" alt></p>
+        <p>也不是我写的啦，看到的简单记录下最优解法。<br>3.数组中重复数字：<br>    将值为i的元素调整到第i个位置求解。<br>4.二维数组查找：<br>    从右上角开始，小于它的数在其左边，大于它的数在其右边。<br>5.空格替换：<br>    两个指针从最右边遍历，遇到空格填充替换字符。<br>&lt; !–more–&gt;<br>6.逆序打印链表：<br>    递归、头插法、栈。<br>7.根据前序遍历和中序遍历重建二叉树（不含重复数）：<br>    前序第一个值为根，把中序分两部分。<br>    private Map&lt;Integer, Integer&gt; indexForInOrders = new HashMap&lt;&gt;();<br>8.给定二叉树和一个节点，找其中序遍历下一个节点(节点有指向父节点指针):<br>    右子树不为空，为右子树最左节点；否则向上找第一个左链接指向的树包含该节点的祖先节点。<br>9.两个栈实现队列：<br>    一个处理push，另一个处理pop，出的时候先进pop再出。<br>10.斐波那契数列：用数组缓存一下计算过的数据。<br>    n个2<em>1矩形覆盖一个2</em>n，几种方法；跳台阶（1or2步）：找递推公式。<br>    变态跳台阶（1or2or…n步）：等比数列f(n) = 2*f(n-1)；动态规划。<br>11.输入一个非递减排序的数组的一个旋转，输出旋转数组的最小元素：<br>    用改良二分法，将数组一分为二，一个是包含最小元素的新旋转数组，另一个是非递减排序的数组（第一个元素一个小于等于最后一个元素），多次二分即可。<br>12.字符矩阵路径：<br>    回溯法（暴力搜索）。<br>13.机器人运动范围：<br>    回溯深搜。<br>14.一根升子剪多段，每段长度乘积最大：<br>    贪心，优先3、2；动态规划。<br>15.输出一个数二进制表示中1的个数：<br>    n&amp;(n-1)位运算，每做一次ans++，至0。<br>16.base（浮点数） 的 exponent（整数） 次方：<br>    <img src="E:%5Cprogram%5Cblog%5Chexo%5Csource%5Cimages%5C2.jpg" alt></p>
 
     </div>
 

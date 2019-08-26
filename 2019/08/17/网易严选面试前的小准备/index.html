@@ -57,17 +57,17 @@
   };
 </script>
 
-  <meta name="description" content="1.string不可变，string buffer和string builder可变；string builder非线性安全，其余两个线性安全。2.输入域名到看到页面过程：域名解析成IP，TCP三次握手，发送HTTP请求，处理请求返回HTTP报文，四次挥手。3.JAVA内存模型：JAVA虚拟机=线程栈+堆，每个线程都有自己的线程栈，所有的创建对象放在堆里，所有原始类型的本地变量和调用栈放线程栈中。">
+  <meta name="description" content="1.string不可变，string buffer和string builder可变；string builder非线性安全，其余两个线性安全。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="网易严选面试前的小准备">
 <meta property="og:url" content="http://yoursite.com/2019/08/17/网易严选面试前的小准备/index.html">
 <meta property="og:site_name" content="MIDORI">
-<meta property="og:description" content="1.string不可变，string buffer和string builder可变；string builder非线性安全，其余两个线性安全。2.输入域名到看到页面过程：域名解析成IP，TCP三次握手，发送HTTP请求，处理请求返回HTTP报文，四次挥手。3.JAVA内存模型：JAVA虚拟机=线程栈+堆，每个线程都有自己的线程栈，所有的创建对象放在堆里，所有原始类型的本地变量和调用栈放线程栈中。">
+<meta property="og:description" content="1.string不可变，string buffer和string builder可变；string builder非线性安全，其余两个线性安全。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-17T16:07:15.719Z">
+<meta property="og:updated_time" content="2019-08-25T15:12:04.381Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="网易严选面试前的小准备">
-<meta name="twitter:description" content="1.string不可变，string buffer和string builder可变；string builder非线性安全，其余两个线性安全。2.输入域名到看到页面过程：域名解析成IP，TCP三次握手，发送HTTP请求，处理请求返回HTTP报文，四次挥手。3.JAVA内存模型：JAVA虚拟机=线程栈+堆，每个线程都有自己的线程栈，所有的创建对象放在堆里，所有原始类型的本地变量和调用栈放线程栈中。">
+<meta name="twitter:description" content="1.string不可变，string buffer和string builder可变；string builder非线性安全，其余两个线性安全。">
   <link rel="canonical" href="http://yoursite.com/2019/08/17/网易严选面试前的小准备/">
 
 
@@ -267,7 +267,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>1.string不可变，string buffer和string builder可变；string builder非线性安全，其余两个线性安全。<br>2.输入域名到看到页面过程：域名解析成IP，TCP三次握手，发送HTTP请求，处理请求返回HTTP报文，四次挥手。<br>3.JAVA内存模型：JAVA虚拟机=线程栈+堆，每个线程都有自己的线程栈，所有的创建对象放在堆里，所有原始类型的本地变量和调用栈放线程栈中。<br>  硬件内存模型与JAVA内存模型的一致性：CPU缓存和指令重排。 synchronized volatile<br>4.MySQL索引：普通index，唯一primary key &amp; unique.，联合，全文fulltext，空间。<br>  hash索引适合等值查询，B+树适合范围查询。B+树比B树查询效率平均。<br>5.error程序本身无法解决，exception程序本身可以解决。<br>6.kafka消息丢失问题：开启重试 or 配置acks = all。<br>7.hashmap:数组和链表，散列桶，存储键值对。<br>8.hashmap 效率高但是线程不安全，hashtable和concurrenthashmap线程安全；hashset存储对象。<br>9.vector同步，arraylist不同步。<br>10.concurrenthashmap线程安全：数据分一段一段，每段一把锁。<br>11.synchronized解决多线程访问资源同步性，它和reentrantlock都是可重入，前者依赖JVM，后者依赖高级API。<br>12.线程把变量保存到本地内存，而主存可以更改数据，这会导致数据不一致。<br>13.volatile修饰变量，它不会阻塞，有可见性，没有原子性；synchronized修饰方法和代码块，与前者相反。<br>14.JUC原子类：基本，数组，引用，对象属性修改。<br>15.AQS构建锁和同步器，使用CLH队列锁。<br>16.集合类：list和set继承collection，map继承map。<br>17.redis：string，hash，list，set，sorted set。淘汰机制。过期时间。</p>
+        <p>1.string不可变，string buffer和string builder可变；string builder非线性安全，其余两个线性安全。</p>
+<a id="more"></a>
+<p>2.输入域名到看到页面过程：域名解析成IP，TCP三次握手，发送HTTP请求，处理请求返回HTTP报文，四次挥手。<br>3.JAVA内存模型：JAVA虚拟机=线程栈+堆，每个线程都有自己的线程栈，所有的创建对象放在堆里，所有原始类型的本地变量和调用栈放线程栈中。<br>  硬件内存模型与JAVA内存模型的一致性：CPU缓存和指令重排。 synchronized volatile<br>4.MySQL索引：普通index，唯一primary key &amp; unique.，联合，全文fulltext，空间。<br>  hash索引适合等值查询，B+树适合范围查询。B+树比B树查询效率平均。<br>5.error程序本身无法解决，exception程序本身可以解决。<br>6.kafka消息丢失问题：开启重试 or 配置acks = all。<br>7.hashmap:数组和链表，散列桶，存储键值对。<br>8.hashmap 效率高但是线程不安全，hashtable和concurrenthashmap线程安全；hashset存储对象。<br>9.vector同步，arraylist不同步。<br>10.concurrenthashmap线程安全：数据分一段一段，每段一把锁。<br>11.synchronized解决多线程访问资源同步性，它和reentrantlock都是可重入，前者依赖JVM，后者依赖高级API。<br>12.线程把变量保存到本地内存，而主存可以更改数据，这会导致数据不一致。<br>13.volatile修饰变量，它不会阻塞，有可见性，没有原子性；synchronized修饰方法和代码块，与前者相反。<br>14.JUC原子类：基本，数组，引用，对象属性修改。<br>15.AQS构建锁和同步器，使用CLH队列锁。<br>16.集合类：list和set继承collection，map继承map。<br>17.redis：string，hash，list，set，sorted set。淘汰机制。过期时间。</p>
 
     </div>
 

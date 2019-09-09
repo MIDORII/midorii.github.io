@@ -57,20 +57,18 @@
   };
 </script>
 
-  <meta name="description" content="也不是我写的啦，看到的简单记录下最优解法，68个都记一下吧。先一半。">
+  <meta name="description" content="先说招银电面问题叭">
 <meta property="og:type" content="article">
-<meta property="og:title" content="剑指offer">
-<meta property="og:url" content="http://yoursite.com/2019/08/21/剑指offer/index.html">
+<meta property="og:title" content="瓜子小准备和问题和招银问题">
+<meta property="og:url" content="http://yoursite.com/2019/09/06/瓜子前的小准备/index.html">
 <meta property="og:site_name" content="MIDORI">
-<meta property="og:description" content="也不是我写的啦，看到的简单记录下最优解法，68个都记一下吧。先一半。">
+<meta property="og:description" content="先说招银电面问题叭">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/48b1d459-8832-4e92-938a-728aae730739.jpg">
-<meta property="og:updated_time" content="2019-09-08T15:19:14.449Z">
+<meta property="og:updated_time" content="2019-09-09T17:24:27.832Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="剑指offer">
-<meta name="twitter:description" content="也不是我写的啦，看到的简单记录下最优解法，68个都记一下吧。先一半。">
-<meta name="twitter:image" content="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/48b1d459-8832-4e92-938a-728aae730739.jpg">
-  <link rel="canonical" href="http://yoursite.com/2019/08/21/剑指offer/">
+<meta name="twitter:title" content="瓜子小准备和问题和招银问题">
+<meta name="twitter:description" content="先说招银电面问题叭">
+  <link rel="canonical" href="http://yoursite.com/2019/09/06/瓜子前的小准备/">
 
 
 <script id="page-configurations">
@@ -84,7 +82,7 @@
   };
 </script>
 
-  <title>剑指offer | MIDORI</title>
+  <title>瓜子小准备和问题和招银问题 | MIDORI</title>
   
 
 
@@ -226,7 +224,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/21/剑指offer/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/06/瓜子前的小准备/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="MIDORI">
@@ -238,7 +236,7 @@
       <meta itemprop="name" content="MIDORI">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">剑指offer
+        <h1 class="post-title" itemprop="name headline">瓜子小准备和问题和招银问题
 
           
         </h1>
@@ -254,7 +252,7 @@
                 
               
 
-              <time title="创建时间：2019-08-21 12:45:31" itemprop="dateCreated datePublished" datetime="2019-08-21T12:45:31+08:00">2019-08-21</time>
+              <time title="创建时间：2019-09-06 10:41:00" itemprop="dateCreated datePublished" datetime="2019-09-06T10:41:00+08:00">2019-09-06</time>
             </span>
           
 
@@ -269,20 +267,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>也不是我写的啦，看到的简单记录下最优解法，68个都记一下吧。<br>先一半。</p>
+        <p>先说招银电面问题叭</p>
 <a id="more"></a>
-<p>3.数组中重复数字：<br>    将值为i的元素调整到第i个位置求解。<br>4.二维数组查找：<br>    从右上角开始，小于它的数在其左边，大于它的数在其右边。<br>5.空格替换：<br>    两个指针从最右边遍历，遇到空格填充替换字符。<br>6.逆序打印链表：<br>    递归、头插法、栈。<br>7.根据前序遍历和中序遍历重建二叉树（不含重复数）：<br>    前序第一个值为根，把中序分两部分。<br>    private Map&lt;Integer, Integer&gt; indexForInOrders = new HashMap&lt;&gt;();<br>8.给定二叉树和一个节点，找其中序遍历下一个节点(节点有指向父节点指针):<br>    右子树不为空，为右子树最左节点；否则向上找第一个左链接指向的树包含该节点的祖先节点。<br>9.两个栈实现队列：<br>    一个处理push，另一个处理pop，出的时候先进pop再出。<br>10.斐波那契数列：用数组缓存一下计算过的数据。<br>    n个2<em>1矩形覆盖一个2<em>n，几种方法；跳台阶（1or2步）：找递推公式。<br>    变态跳台阶（1or2or…n步）：等比数列f(n) = 2</em>f(n-1)；动态规划。<br>11.输入一个非递减排序的数组的一个旋转，输出旋转数组的最小元素：<br>    用改良二分法，将数组一分为二，一个是包含最小元素的新旋转数组，另一个是非递减排序的数组（第一个元素一个小于等于最后一个元素），多次二分即可。<br>12.字符矩阵路径：<br>    回溯法（暴力搜索）。<br>13.机器人运动范围：<br>    回溯深搜。<br>14.一根升子剪多段，每段长度乘积最大：<br>    贪心，优先3、2；动态规划。<br>15.输出一个数二进制表示中1的个数：<br>    n&amp;(n-1)位运算，每做一次ans++，至0。<br>16.base（浮点数） 的 exponent（整数） 次方：<br>    <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/48b1d459-8832-4e92-938a-728aae730739.jpg" alt="如图"><br>    (x<em>x)n/可以递归求解。<br>17.打印从1到最大n位数：<br>   char数组存储数字，回溯法得到所有数。<br>18.O(1)时间删除链表节点（删重复节点类似）：<br>    非尾节点，将下一个节点值给它，把下一个删了；尾节点则将它前面一个节点指向null。<br>19.正则表达式匹配（.一个，a</em>任意个a）：<br>    dp[0][0] = true;<br>    for (int i = 1; i &lt;= n; i++)<br>        if (pattern[i - 1] == ‘</em>‘)<br>            dp[0][i] = dp[0][i - 2];</p>
-<pre><code>for (int i = 1; i &lt;= m; i++)
-    for (int j = 1; j &lt;= n; j++)
-        if (str[i - 1] == pattern[j - 1] || pattern[j - 1] == &apos;.&apos;)
-            dp[i][j] = dp[i - 1][j - 1];
-        else if (pattern[j - 1] == &apos;*&apos;)
-            if (pattern[j - 2] == str[i - 1] || pattern[j - 2] == &apos;.&apos;) {
-                dp[i][j] |= dp[i][j - 1]; // a* counts as single a
-                dp[i][j] |= dp[i - 1][j]; // a* counts as multiple a
-                dp[i][j] |= dp[i][j - 2]; // a* counts as empty
-            } else
-                dp[i][j] = dp[i][j - 2];  // a* only counts as empty</code></pre><p>20.表示数值的字符串：<br>    正则表达式匹配，return new String(str).matches(“[+-]?\d*(\.\d+)?([eE][+-]?\d+)?”);<br>    []  ： 字符集合<br>    ()  ： 分组<br>    ?   ： 重复 0 ~ 1 次<br>    +   ： 重复 1 ~ n 次<br>    *   ： 重复 0 ~ n 次<br>    .   ： 任意字符<br>    \. ： 转义后的 .<br>    \d ： 数字<br>21.调整数组顺序使奇数位于偶数前面：<br>    创新数组或者冒泡。<br>22.链表中倒数第 K 个结点：<br>    设置两个指针 P1 和 P2，先让 P1 移动 K 个节点，再同时移动。<br>23.链表中环的入口结点：<br>    一个指针每次移动两个，另一个指针每次移动一个，存在环必定相遇，此点即入口。<br>24.反转链表：<br>    递归，或者头插法迭代。<br>25.合并两个排序的链表：<br>    递归或者迭代。<br>26.树的子结构：</p>
+<p>1.讲对控制反转和依赖插入的理解。<br>2.JAVA中线程实现的方法。<br>3.hashmap的理解、对线程安全的理解、hashmap的线程安全具体实现。<br>4.final和finally差异。</p>
+<p>瓜子小问题</p>
+<p>瓜子小准备<br>1.socket编程函数：<br>服务器：socket()创建；bind()绑定IP、端口；listen()设置最大连接；accept()接受客户端连接；send()recv()收发data；<br>客户端：socket()；bind()；connect();send()recv();<br>2.死锁：互斥、请求与保持、不可剥夺、环路等待。<br>3.LRU：最近最少使用。<br>链表，最新放尾部，最近访问放尾部，删表头。<br>实现，LinkedHashMap,removeEldestEntry.<br>4.进程间通信：临界区、事件、信号量、互斥量。进程内存独有。<br>  线程间通信：全局变量、Message、CEvent。线程内存共享，CPU调度分配最小单位。<br>5.稳定：插冒归基。不稳：希选堆快。<br>6.进程切换：虚拟内存。<br>shutdown:howto值，0读1写2读写；close：立即关，对别的开。<br>7.服务器共享session：MySQL、通过cookie、redis、还有个啥来着。<br>8.进程调度：FCFS、短作业优先、优先权、时间片、高相应比（响应时间/需求服务时间）。<br>9.运行–&gt;阻塞–&gt;(sleep.join)就绪–&gt;运行；运行–(wait)等待；运行–锁池；锁池–就绪。<br>10.垃圾回收（？）：复制、标记整理、标记清除、引用计数、分代。<br>11.LinuxL:看内存atop、ntop(实时内存)、free；网络状态netstat；磁盘空间df；tail日志跟新；top资源占用；grep字符串匹配；sudo授权。</p>
 
     </div>
 
@@ -299,8 +288,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2019/08/18/网易严选的查缺补漏/" rel="next" title="严选和猿辅导的查缺补漏">
-                  <i class="fa fa-chevron-left"></i> 严选和猿辅导的查缺补漏
+                <a href="/2019/08/21/剑指offer/" rel="next" title="剑指offer">
+                  <i class="fa fa-chevron-left"></i> 剑指offer
                 </a>
               
             </div>
@@ -309,8 +298,8 @@
 
             <div class="post-nav-prev post-nav-item">
               
-                <a href="/2019/09/06/瓜子前的小准备/" rel="prev" title="瓜子小准备和问题和招银问题">
-                  瓜子小准备和问题和招银问题 <i class="fa fa-chevron-right"></i>
+                <a href="/2019/09/10/小红书之前的小准备/" rel="prev" title="小红书之前的小准备">
+                  小红书之前的小准备 <i class="fa fa-chevron-right"></i>
                 </a>
               
             </div>

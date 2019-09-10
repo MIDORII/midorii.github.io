@@ -57,14 +57,17 @@
   };
 </script>
 
-  <meta property="og:type" content="article">
+  <meta name="description" content="1.进程和线程的区别：2.hashmap不安全原因:put的addEntry和扩容，都不同步。3.hashtable线程安全实现：synchronized来保证线程安全">
+<meta property="og:type" content="article">
 <meta property="og:title" content="小红书之前的小准备">
 <meta property="og:url" content="http://yoursite.com/2019/09/10/小红书之前的小准备/index.html">
 <meta property="og:site_name" content="MIDORI">
+<meta property="og:description" content="1.进程和线程的区别：2.hashmap不安全原因:put的addEntry和扩容，都不同步。3.hashtable线程安全实现：synchronized来保证线程安全">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-09T17:29:50.964Z">
+<meta property="og:updated_time" content="2019-09-10T01:14:20.015Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="小红书之前的小准备">
+<meta name="twitter:description" content="1.进程和线程的区别：2.hashmap不安全原因:put的addEntry和扩容，都不同步。3.hashtable线程安全实现：synchronized来保证线程安全">
   <link rel="canonical" href="http://yoursite.com/2019/09/10/小红书之前的小准备/">
 
 
@@ -264,7 +267,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        
+        <p>1.进程和线程的区别：<br>2.hashmap不安全原因:put的addEntry和扩容，都不同步。<br>3.hashtable线程安全实现：synchronized来保证线程安全</p>
+<a id="more"></a>
+<p>4.concurrenthashmap线程安全实现：Segment数组结构和HashEntry数组结构组成，Segment是一种可重入锁ReentrantLock，ashEntry则用于存储键值对数据。一个ConcurrentHashMap里包含一个Segment数组，Segment的结构和HashMap类似，是一种数组和链表结构，一个Segment里包含一个HashEntry数组，每个HashEntry是一个链表结构的元素，每个Segment守护着一个HashEntry数组里的元素，当对HashEntry数组的数据进行修改时，必须首先获得它对应的Segment锁。<br>5.final和fianlly区别：<br>final修饰不能被继承的类、锁定方法、修饰变量使它称为常量。finally作为异常处理的一部分，它只能用在try/catch语句中，并且附带一个语句块。<br>6.JVM的存储方式：<br>方法区:存储的是类的定义,静态数据,常量池,由jvm来控制管理<br>堆区:数组申请的空间,对象申请的空间,总之new出来的空间，堆空间中存储的是数组数据,对象的数据,可以通过程序操作的<br>栈区:堆中的对象空间中存储的是属性数据,没有方法,判断对象是否相等,主要判断的是对象中的属性的值是否相等，所以对象就是数据的载体,对象中没有方法,只有数据，通过对象打点调用方法,实际上使用的方法区中的类定义里方法，方法中使用哪个对象的数据,取决于方法是被哪个对象调用的<br>7.链表倒置：<br>LinkNode prev = null;<br>LinkNode next = null;<br>while (node != null){<br>next = node.next;<br>node.next = prev;<br>prev = node;<br>node = next;}<br>return prev;<br>8.数组子集：<br>res = []<br>for i in range(1&lt;&lt;len(nums)):# 子集总共有多少个集合<br>    tmp = []<br>    for j in range(len(nums)):# 当前子集集合的生成<br>        if i &amp; 1 &lt;&lt; j:  # 当前子集集合包含第j字符的判断<br>            tmp.append(nums[j])<br>    res.append(tmp)<br>return res<br>9.链表快排：<br>pNode* partition(pNode* start,pNode* end){<br>    int num = start-&gt;val;<br>    pNode* p = start;<br>    pNode* q = start-&gt;next;<br>    while(q != end){<br>        if(q-&gt;val &lt; num){<br>            p = p-&gt;next;<br>            swap(p-&gt;val,q-&gt;val);<br>        }<br>        q = q-&gt;next;<br>    }<br>    swap(p-&gt;val,start-&gt;val);<br>    return p;<br>}<br>void quick_sort(pNode* start,pNode* end){<br>    if(start != end){<br>        pNode* index = partition(start,end);<br>        quick_sort(start,index);<br>        quick_sort(index-&gt;next,end);<br>    }<br>}<br>10.</p>
+<p>手撕链表的最基本操作：<br>type struct Node<br>{<br>    int num;<br>    struct Node *next;<br>}node;<br>插入：<br> p = (LinkList)malloc(sizeof(LNode));<br> p-&gt;next = x ;<br> p-&gt;next = l-&gt;next;<br> l-&gt;next = p;<br> 删除：<br> p = L;<br> while() p = p-&gt;next;<br> q = p-&gt;next;p-&gt;next=q-&gt;next;<br> free(q);</p>
+
     </div>
 
     

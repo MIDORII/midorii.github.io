@@ -57,14 +57,17 @@
   };
 </script>
 
-  <meta property="og:type" content="article">
-<meta property="og:title" content="操作系统的小小集合">
+  <meta name="description" content="呜呜加油。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="今日的小补充">
 <meta property="og:url" content="http://yoursite.com/2019/09/15/操作系统的小小集合/index.html">
 <meta property="og:site_name" content="MIDORI">
+<meta property="og:description" content="呜呜加油。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-15T04:20:11.163Z">
+<meta property="og:updated_time" content="2019-09-18T16:27:21.841Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="操作系统的小小集合">
+<meta name="twitter:title" content="今日的小补充">
+<meta name="twitter:description" content="呜呜加油。">
   <link rel="canonical" href="http://yoursite.com/2019/09/15/操作系统的小小集合/">
 
 
@@ -79,7 +82,7 @@
   };
 </script>
 
-  <title>操作系统的小小集合 | MIDORI</title>
+  <title>今日的小补充 | MIDORI</title>
   
 
 
@@ -233,7 +236,7 @@
       <meta itemprop="name" content="MIDORI">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">操作系统的小小集合
+        <h1 class="post-title" itemprop="name headline">今日的小补充
 
           
         </h1>
@@ -264,7 +267,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        
+        <p>呜呜加油。</p>
+<a id="more"></a>
+<p>1.线程池<br>(1)自定义一个类，去继承Thread类，重写run方法<br>(2)自定义一个类，去实现Runnable接口，重写run方法<br>(3)自定义一个类，实现Callable接口，重写call方法<br>corePoolSize  = &gt;  该线程池中核心线程数最大值<br>maximumPoolSize  = &gt;  该线程池中线程总数的最大值<br>keepAliveTime  = &gt;  该线程池中非核心线程闲置超时时长<br>unit  = &gt; （时间单位）<br>workQueue = &gt;( Blocking：阻塞的，queue：队列)该线程池中的任务队列：维护着等待执行的Runnable对象。当所有的核心线程都在干活时，新添加的任务会被添加到这个队列中等待处理，如果队列满了，则新建非核心线程执行任务<br>threadFactory = &gt; 创建线程的方式<br>handler = &gt; 这个主要是用来抛异常的<br>A：newFixedThreadPool 创建一个定长线程池，可控制线程最大并发数，超出的线程会在队列中等待。<br>B：newCachedThreadPool创建一个可缓存线程池，如果线程池长度超过处理需要，可灵活回收空闲线程，若无可回收，则新建线程。<br>C：newScheduledThreadPool 创建一个定长任务线程池，支持定时及周期性任务执行。<br>D：newSingleThreadExecutor 创建一个单线程的线程池，它只会用唯一的工作线程来执行任务，保证所有任务按照指定顺序(FIFO, LIFO, 优先级)执行。</p>
+
     </div>
 
     

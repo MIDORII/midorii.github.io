@@ -57,18 +57,18 @@
   };
 </script>
 
-  <meta name="description" content="秋招两个多月终于成功上岸呜呜，没有开奖的就不等啦。之前记的一些小知识都是零零碎碎的为了面试而准备的，后期希望写一些系统的C++开发与Linux编程学习博客，我就是未来的C++大佬了（反派笑（并不。">
+  <meta name="description" content="呜呜加油。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="上岸啦.md">
-<meta property="og:url" content="http://yoursite.com/2019/09/27/上岸啦/index.html">
+<meta property="og:title" content="今日的小补充">
+<meta property="og:url" content="http://yoursite.com/2019/09/15/今日的小补充/index.html">
 <meta property="og:site_name" content="MIDORI">
-<meta property="og:description" content="秋招两个多月终于成功上岸呜呜，没有开奖的就不等啦。之前记的一些小知识都是零零碎碎的为了面试而准备的，后期希望写一些系统的C++开发与Linux编程学习博客，我就是未来的C++大佬了（反派笑（并不。">
+<meta property="og:description" content="呜呜加油。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-27T06:14:42.547Z">
+<meta property="og:updated_time" content="2019-09-19T23:47:49.932Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="上岸啦.md">
-<meta name="twitter:description" content="秋招两个多月终于成功上岸呜呜，没有开奖的就不等啦。之前记的一些小知识都是零零碎碎的为了面试而准备的，后期希望写一些系统的C++开发与Linux编程学习博客，我就是未来的C++大佬了（反派笑（并不。">
-  <link rel="canonical" href="http://yoursite.com/2019/09/27/上岸啦/">
+<meta name="twitter:title" content="今日的小补充">
+<meta name="twitter:description" content="呜呜加油。">
+  <link rel="canonical" href="http://yoursite.com/2019/09/15/今日的小补充/">
 
 
 <script id="page-configurations">
@@ -82,7 +82,7 @@
   };
 </script>
 
-  <title>上岸啦.md | MIDORI</title>
+  <title>今日的小补充 | MIDORI</title>
   
 
 
@@ -224,7 +224,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/27/上岸啦/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/15/今日的小补充/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="MIDORI">
@@ -236,7 +236,7 @@
       <meta itemprop="name" content="MIDORI">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">上岸啦.md
+        <h1 class="post-title" itemprop="name headline">今日的小补充
 
           
         </h1>
@@ -252,7 +252,7 @@
                 
               
 
-              <time title="创建时间：2019-09-27 14:08:37" itemprop="dateCreated datePublished" datetime="2019-09-27T14:08:37+08:00">2019-09-27</time>
+              <time title="创建时间：2019-09-15 12:20:11" itemprop="dateCreated datePublished" datetime="2019-09-15T12:20:11+08:00">2019-09-15</time>
             </span>
           
 
@@ -267,7 +267,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>秋招两个多月终于成功上岸呜呜，没有开奖的就不等啦。<br>之前记的一些小知识都是零零碎碎的为了面试而准备的，<br>后期希望写一些系统的C++开发与Linux编程学习博客，<br>我就是未来的C++大佬了（反派笑（并不。</p>
+        <p>呜呜加油。</p>
+<a id="more"></a>
+<p>1.线程池<br>(1)自定义一个类，去继承Thread类，重写run方法<br>(2)自定义一个类，去实现Runnable接口，重写run方法<br>(3)自定义一个类，实现Callable接口，重写call方法<br>corePoolSize  = &gt;  该线程池中核心线程数最大值<br>maximumPoolSize  = &gt;  该线程池中线程总数的最大值<br>keepAliveTime  = &gt;  该线程池中非核心线程闲置超时时长<br>unit  = &gt; （时间单位）<br>workQueue = &gt;( Blocking：阻塞的，queue：队列)该线程池中的任务队列：维护着等待执行的Runnable对象。当所有的核心线程都在干活时，新添加的任务会被添加到这个队列中等待处理，如果队列满了，则新建非核心线程执行任务<br>threadFactory = &gt; 创建线程的方式<br>handler = &gt; 这个主要是用来抛异常的<br>A：newFixedThreadPool 创建一个定长线程池，可控制线程最大并发数，超出的线程会在队列中等待。<br>B：newCachedThreadPool创建一个可缓存线程池，如果线程池长度超过处理需要，可灵活回收空闲线程，若无可回收，则新建线程。<br>C：newScheduledThreadPool 创建一个定长任务线程池，支持定时及周期性任务执行。<br>D：newSingleThreadExecutor 创建一个单线程的线程池，它只会用唯一的工作线程来执行任务，保证所有任务按照指定顺序(FIFO, LIFO, 优先级)执行。<br>2.object:<br>protected Object clone() 创建并返回此对象的一个副本。<br>boolean equals(Object obj) 指示某个其他对象是否与此对象“相等”。<br>protected void finalize() 当垃圾回收器确定不存在对该对象的更多引用时，由对象的垃圾回收器调用此方法。<br>Class&lt;? extendsObject&gt; getClass() 返回一个对象的运行时类。<br>int hashCode() 返回该对象的哈希码值。<br>void notify() 唤醒在此对象监视器上等待的单个线程。<br>void notifyAll() 唤醒在此对象监视器上等待的所有线程。<br>String toString() 返回该对象的字符串表示。<br>void wait() 导致当前的线程等待，直到其他线程调用此对象的 notify() 方法或 notifyAll() 方法。<br>void wait(long timeout) 导致当前的线程等待，直到其他线程调用此对象的 notify() 方法或 notifyAll() 方法，或者超过指定的时间量。<br>void wait(long timeout, int nanos) 导致当前的线程等待，直到其他线程调用此对象的 notify()</p>
 
     </div>
 
@@ -284,8 +286,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2019/09/15/华为前的小准备/" rel="next" title="华为前的小准备">
-                  <i class="fa fa-chevron-left"></i> 华为前的小准备
+                <a href="/2019/09/15/计算机网络的小小总结/" rel="next" title="计算机网络的小小总结">
+                  <i class="fa fa-chevron-left"></i> 计算机网络的小小总结
                 </a>
               
             </div>
@@ -293,6 +295,10 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2019/09/15/华为前的小准备/" rel="prev" title="华为前的小准备">
+                  华为前的小准备 <i class="fa fa-chevron-right"></i>
+                </a>
               
             </div>
           </div>

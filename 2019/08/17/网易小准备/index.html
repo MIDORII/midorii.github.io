@@ -57,18 +57,18 @@
   };
 </script>
 
-  <meta name="description" content="1.进程和线程的区别：2.hashmap不安全原因:put的addEntry和扩容，都不同步。3.hashtable线程安全实现：synchronized来保证线程安全">
+  <meta name="description" content="1.string不可变，string buffer和string builder可变；string builder非线性安全，其余两个线性安全。2.输入域名到看到页面过程：域名解析成IP，TCP三次握手，发送HTTP请求，处理请求返回HTTP报文，四次挥手。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="小红书之前的小准备">
-<meta property="og:url" content="http://yoursite.com/2019/09/10/小红书之前的小准备/index.html">
+<meta property="og:title" content="网易小准备">
+<meta property="og:url" content="http://yoursite.com/2019/08/17/网易小准备/index.html">
 <meta property="og:site_name" content="MIDORI">
-<meta property="og:description" content="1.进程和线程的区别：2.hashmap不安全原因:put的addEntry和扩容，都不同步。3.hashtable线程安全实现：synchronized来保证线程安全">
+<meta property="og:description" content="1.string不可变，string buffer和string builder可变；string builder非线性安全，其余两个线性安全。2.输入域名到看到页面过程：域名解析成IP，TCP三次握手，发送HTTP请求，处理请求返回HTTP报文，四次挥手。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-15T05:45:14.076Z">
+<meta property="og:updated_time" content="2019-09-27T06:31:02.740Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小红书之前的小准备">
-<meta name="twitter:description" content="1.进程和线程的区别：2.hashmap不安全原因:put的addEntry和扩容，都不同步。3.hashtable线程安全实现：synchronized来保证线程安全">
-  <link rel="canonical" href="http://yoursite.com/2019/09/10/小红书之前的小准备/">
+<meta name="twitter:title" content="网易小准备">
+<meta name="twitter:description" content="1.string不可变，string buffer和string builder可变；string builder非线性安全，其余两个线性安全。2.输入域名到看到页面过程：域名解析成IP，TCP三次握手，发送HTTP请求，处理请求返回HTTP报文，四次挥手。">
+  <link rel="canonical" href="http://yoursite.com/2019/08/17/网易小准备/">
 
 
 <script id="page-configurations">
@@ -82,7 +82,7 @@
   };
 </script>
 
-  <title>小红书之前的小准备 | MIDORI</title>
+  <title>网易小准备 | MIDORI</title>
   
 
 
@@ -224,7 +224,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/10/小红书之前的小准备/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/17/网易小准备/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="MIDORI">
@@ -236,7 +236,7 @@
       <meta itemprop="name" content="MIDORI">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">小红书之前的小准备
+        <h1 class="post-title" itemprop="name headline">网易小准备
 
           
         </h1>
@@ -252,7 +252,7 @@
                 
               
 
-              <time title="创建时间：2019-09-10 01:29:50" itemprop="dateCreated datePublished" datetime="2019-09-10T01:29:50+08:00">2019-09-10</time>
+              <time title="创建时间：2019-08-17 20:16:53" itemprop="dateCreated datePublished" datetime="2019-08-17T20:16:53+08:00">2019-08-17</time>
             </span>
           
 
@@ -267,9 +267,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>1.进程和线程的区别：<br>2.hashmap不安全原因:put的addEntry和扩容，都不同步。<br>3.hashtable线程安全实现：synchronized来保证线程安全</p>
+        <p>1.string不可变，string buffer和string builder可变；string builder非线性安全，其余两个线性安全。<br>2.输入域名到看到页面过程：域名解析成IP，TCP三次握手，发送HTTP请求，处理请求返回HTTP报文，四次挥手。</p>
 <a id="more"></a>
-<p>4.concurrenthashmap线程安全实现：Segment数组结构和HashEntry数组结构组成，Segment是一种可重入锁ReentrantLock，ashEntry则用于存储键值对数据。一个ConcurrentHashMap里包含一个Segment数组，Segment的结构和HashMap类似，是一种数组和链表结构，一个Segment里包含一个HashEntry数组，每个HashEntry是一个链表结构的元素，每个Segment守护着一个HashEntry数组里的元素，当对HashEntry数组的数据进行修改时，必须首先获得它对应的Segment锁。<br>5.final和fianlly区别：<br>final修饰不能被继承的类、锁定方法、修饰变量使它称为常量。finally作为异常处理的一部分，它只能用在try/catch语句中，并且附带一个语句块。<br>6.JVM的存储方式：<br>方法区:存储的是类的定义,静态数据,常量池,由jvm来控制管理<br>堆区:数组申请的空间,对象申请的空间,总之new出来的空间，堆空间中存储的是数组数据,对象的数据,可以通过程序操作的<br>栈区:堆中的对象空间中存储的是属性数据,没有方法,判断对象是否相等,主要判断的是对象中的属性的值是否相等，所以对象就是数据的载体,对象中没有方法,只有数据，通过对象打点调用方法,实际上使用的方法区中的类定义里方法，方法中使用哪个对象的数据,取决于方法是被哪个对象调用的</p>
+<p>3.JAVA内存模型：JAVA虚拟机=线程栈+堆，每个线程都有自己的线程栈，所有的创建对象放在堆里，所有原始类型的本地变量和调用栈放线程栈中。<br>  硬件内存模型与JAVA内存模型的一致性：CPU缓存和指令重排。 synchronized volatile<br>4.MySQL索引：普通index，唯一primary key &amp; unique.，联合，全文fulltext，空间。<br>  hash索引适合等值查询，B+树适合范围查询。B+树比B树查询效率平均。<br>5.error程序本身无法解决，exception程序本身可以解决。<br>6.kafka消息丢失问题：开启重试 or 配置acks = all。<br>7.hashmap:数组和链表，散列桶，存储键值对。<br>8.hashmap 效率高但是线程不安全，hashtable和concurrenthashmap线程安全；hashset存储对象。<br>9.vector同步，arraylist不同步。<br>10.concurrenthashmap线程安全：数据分一段一段，每段一把锁。<br>11.synchronized解决多线程访问资源同步性，它和reentrantlock都是可重入，前者依赖JVM，后者依赖高级API。<br>12.线程把变量保存到本地内存，而主存可以更改数据，这会导致数据不一致。<br>13.volatile修饰变量，它不会阻塞，有可见性，没有原子性；synchronized修饰方法和代码块，与前者相反。<br>14.JUC原子类：基本，数组，引用，对象属性修改。<br>15.AQS构建锁和同步器，使用CLH队列锁。<br>16.集合类：list和set继承collection，map继承map。<br>17.redis：string，hash，list，set，sorted set。淘汰机制。过期时间。</p>
 
     </div>
 
@@ -286,8 +286,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2019/09/06/瓜子前的小准备/" rel="next" title="瓜子小准备和问题和招银问题">
-                  <i class="fa fa-chevron-left"></i> 瓜子小准备和问题和招银问题
+                <a href="/2019/08/17/Hello-World/" rel="next" title="Hello World">
+                  <i class="fa fa-chevron-left"></i> Hello World
                 </a>
               
             </div>
@@ -296,8 +296,8 @@
 
             <div class="post-nav-prev post-nav-item">
               
-                <a href="/2019/09/11/小红书问答/" rel="prev" title="小红书问答">
-                  小红书问答 <i class="fa fa-chevron-right"></i>
+                <a href="/2019/08/21/剑指offer/" rel="prev" title="剑指offer">
+                  剑指offer <i class="fa fa-chevron-right"></i>
                 </a>
               
             </div>
